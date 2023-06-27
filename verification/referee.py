@@ -38,7 +38,7 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "soma",
+            "python": "min_diferenca_niveis",
             "js": "countConsecutiveSummers"
         },
         cover_code={
