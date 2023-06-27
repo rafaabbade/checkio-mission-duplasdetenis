@@ -1,16 +1,16 @@
 <!-- Describe task in general -->
 
-<p>
-    Crie uma função que receba dois números inteiros como parâmetros e retorne a soma desses números.
-</p>
+<p>Quatro amigos combinaram de jogar tênis em duplas. Cada um dos amigos tem um nível de jogo, que é representado por um número inteiro: quanto maior o número, melhor o nível do jogador.</p>
+<p>Os quatro amigos querem formar as duplas para iniciar o jogo. De forma a tornar o jogo mais interessante, eles querem que os níveis dos dois times formados sejam o mais próximo possível. O nível de um time é a soma dos níveis dos jogadores do time.</p>
+<p></p>Embora eles sejam muito bons jogadores de tênis, os quatro amigos não são muito bons em algumas outras coisas, como lógica ou matemática. Você pode ajudá-los e encontrar a menor diferença possível entre os níveis dos times que podem ser formados?</p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> Dois números inteiros a e b.
+    <strong>Entrada: </strong> A entrada contém uma lista com quatro elementos, cada um contendo um inteiro A, B, C e D, indicando o nível de jogo dos quatro amigos.
 </p>
 
 <p>
-    <strong>Saída: </strong> Um número inteiro, que é a soma de a e b. 
+    <strong>Saída: </strong> Seu programa deve produzir uma única linha, contendo um único inteiro, a menor diferença entre os níveis dos dois times formados.
 </p>
 
 
@@ -25,9 +25,13 @@
 countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
-<pre class="brush: python">soma(2,3) == 5
-soma(-1,5) == 4
-soma(0,0) == 0
+<pre class="brush: python">
+min_diferenca_niveis([1, 2, 3, 4]) == 0
+min_diferenca_niveis([5, 5, 5, 5]) == 0
+min_diferenca_niveis([1, 2, 3, 9]) == 3
+min_diferenca_niveis([10, 20, 30, 40]) == 10
+min_diferenca_niveis([15, 10, 25, 30]) == 5
+min_diferenca_niveis([100, 50, 75, 25]) == 0
 </pre>
 {% endif %}
 </div>
